@@ -12,6 +12,20 @@ $(function() {
       }
   });
 ));
+  
+function category() {
+    $.get('{{ route('category') }}', function(data) {
+        // $('#category').append(
+        //     '<option value="">-- Pilih Kategori --</option>'
+        // );
+        $('#category').empty();
+        $.each(data, function(index, item) {
+            $('#category').append(
+                '<option value="'+item.id+'">'+item.category+'</option>'
+            );
+        });
+    });
+}
 
 function add() {
     var new_cat = $('.select2-search__field').val();
