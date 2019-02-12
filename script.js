@@ -30,7 +30,7 @@ function category() {
 
 function add() {
     var new_cat = $('.select2-search__field').val();
-    $.get('/category/new-cat/'+new_cat, function(data) {
+    $.get("{{ url('/category/set-category/') }}/"+new_cat, function(data) {
         category();
     });
     $('#category').select2({
