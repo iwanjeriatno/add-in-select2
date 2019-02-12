@@ -1,4 +1,5 @@
 $(function() {
+  category();
   $('#category').select2({
       placeholder: '- Pilih -',
       width: '100%',
