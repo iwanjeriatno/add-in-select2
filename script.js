@@ -10,7 +10,7 @@ function initCategory() {
         width: '100%',
         "language": {
            "noResults": function(){
-               return "<a onclick='addCategory()' href='#'>Tambah Data</a>";
+               return "Tidak ada hasil yang ditemukan. <a onclick='addCategory()' href='#'>Tambah Data</a>";
            }
         },
         escapeMarkup: function (markup) {
