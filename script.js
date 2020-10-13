@@ -1,7 +1,7 @@
 $(function() {
   initCategory();
   getCategory();
-));
+});
   
 function initCategory() {
   $('#category').select2({
